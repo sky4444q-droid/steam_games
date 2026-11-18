@@ -14,3 +14,6 @@ venv/
 .ipynb_checkpoints/
 Thumbs.db
 .DS_Store
+
+# Data — ดาวน์โหลดจาก Kaggle (ดูหัวข้อแหล่งข้อมูลใน README)
+*.csv

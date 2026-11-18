@@ -4,6 +4,13 @@ Pipeline สำหรับดึงข้อมูลเกม Steam จาก 
 
 **Looker Studio Dashboard:** <ใส่ลิงก์ Dashboard ที่นี่>
 
+## แหล่งข้อมูล (Data Source)
+
+- ชุดข้อมูล `steam_games_wikidata.csv` จาก Kaggle: <ใส่ลิงก์ Kaggle ที่นี่>
+- ข้อมูลต้นทางมาจาก [Wikidata](https://www.wikidata.org/) ซึ่งเผยแพร่ภายใต้ CC0 (Public domain)
+- ไฟล์ข้อมูลไม่ได้อยู่ใน repo นี้ ให้ดาวน์โหลดจากลิงก์ด้านบน แล้ววางไว้ในโฟลเดอร์โปรเจกต์ก่อนรัน
+- ข้อมูลเป็นข้อมูลของเกมเท่านั้น ไม่มีข้อมูลส่วนบุคคล
+
 ---
 
 ## สถาปัตยกรรม (Architecture)
@@ -58,7 +65,7 @@ pip install -r requirements.txt
 # 2. เปิดฐานข้อมูล PostgreSQL
 docker-compose up -d
 
-# 3. วางไฟล์ credentials.json ไว้ในโฟลเดอร์โปรเจกต์ แล้วรัน pipeline
+# 3. วางไฟล์ credentials.json และ steam_games_wikidata.csv ไว้ในโฟลเดอร์โปรเจกต์ แล้วรัน pipeline
 python run_pipeline.py
 ```
 
