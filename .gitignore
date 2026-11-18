@@ -1,0 +1,16 @@
+# Secrets — ห้ามขึ้น GitHub
+credentials.json
+*.key.json
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor / OS
+.vscode/
+.ipynb_checkpoints/
+Thumbs.db
+.DS_Store
